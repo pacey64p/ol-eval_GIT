@@ -7,7 +7,8 @@ node {
 	
 	stage ('Essais commit') {
 		
-		env.LIST_COMMIT = bat 'git log --oneline'
+		env.LIST_COMMIT = 'test'
+		//bat 'git log --oneline'
 		
 		echo env.LIST_COMMIT
 	
