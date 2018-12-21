@@ -4,7 +4,10 @@ node {
 	}
 	
 	stage ('Essais commit') {
-		echo "$GIT_COMMIT - $BRANCH_NAME"
+		
+		LIST_COMMIT = bat 'git log --oneline'
+		
+		echo "$LIST_COMMIT"
 	
 	}
 }
