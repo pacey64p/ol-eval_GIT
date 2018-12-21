@@ -4,7 +4,7 @@ node {
 	}
 	
 	stage ('Essais commit') {
-		echo env.GIT_PREVIOUS_COMMIT
+		echo "$GIT_COMMIT - $BRANCH_NAME"
 	
 	}
 }
