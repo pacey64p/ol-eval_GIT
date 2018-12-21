@@ -7,7 +7,7 @@ node {
 		
 		LIST_COMMIT = bat 'git log --oneline'
 		
-		echo "$LIST_COMMIT"
+		echo LIST_COMMIT
 	
 	}
 }
