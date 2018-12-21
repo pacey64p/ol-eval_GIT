@@ -7,7 +7,7 @@ node {
 	
 	stage ('Essais commit') {
 		
-		env.LIST_COMMIT = 'test'
+		env.LIST_COMMIT = bat(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
 		//bat 'git log --oneline'
 		
 		echo env.LIST_COMMIT
