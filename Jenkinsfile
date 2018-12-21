@@ -4,7 +4,7 @@ node {
 	}
 	
 	stage ('Essais commit') {
-		echo "${GIT_COMMIT}"
+		echo "${GIT_PREVIOUS_COMMIT}"
 	
 	}
 }
