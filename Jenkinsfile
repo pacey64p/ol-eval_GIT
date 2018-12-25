@@ -14,6 +14,6 @@ node {
 		echo env.COMMIT
 		bat "echo \$COMMIT > $COMMIT"
 		bat "echo env.COMMIT > ${env.COMMIT}"
-		bat "echo %COMMIT"
+		bat "echo %"
 	}
 }
