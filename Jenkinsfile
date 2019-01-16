@@ -12,6 +12,9 @@ node {
 		//bat(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
 		//echo env.LIST_COMMIT
 		echo env.COMMIT
+		
+		bat "echo GIT_PREVIOUS_COMMIT %GIT_PREVIOUS_COMMIT%"
+		
 		bat "echo \$COMMIT > $COMMIT"
 		bat "echo env.COMMIT > ${env.COMMIT}"
 		bat "echo \\%"
