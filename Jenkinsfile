@@ -13,7 +13,8 @@ node {
 		//echo env.LIST_COMMIT
 		echo env.COMMIT
 		
-		bat "echo GIT_PREVIOUS_COMMIT %GIT_PREVIOUS_COMMIT%"
+		bat "echo env"
+		
 		
 		bat "echo \$COMMIT > $COMMIT"
 		bat "echo env.COMMIT > ${env.COMMIT}"
