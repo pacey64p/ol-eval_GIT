@@ -13,7 +13,7 @@ node {
 		//echo env.LIST_COMMIT
 		echo env.COMMIT
 		
-		bat "echo env"
+		bat "echo set"
 		
 		
 		bat "echo \$COMMIT > $COMMIT"
